@@ -1,7 +1,7 @@
 /*
- * HomePage
+ * NavBar
  *
- * This is the first thing users see of our App, at the '/' route
+ * This is our users static method of navigating our website, it should be displayed on all pages.
  *
  * NOTE: while this component should technically be a stateless functional
  * component (SFC), hot reloading does not currently support SFCs. If hot
@@ -21,7 +21,7 @@ const Title = styled.h1`
 `;
 
 /* eslint-disable react/prefer-stateless-function */
-export default class HomePage extends React.PureComponent {
+export default class NavBar extends React.PureComponent {
   render() {
     return (
       <Title>
