@@ -10,6 +10,6 @@ export const scope = 'app.containers.HomePage';
 export default defineMessages({
   header: {
     id: `${scope}.header`,
-    defaultMessage: 'Ethan Van Vleck - Software Engineer',
+    defaultMessage: 'Challenges.. rename this',
   },
 });

@@ -10,8 +10,9 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import HomePage from 'containers/HomePage/Loadable';
 import NavBar from 'containers/NavBar/Loadable';
+import HomePage from 'containers/HomePage/Loadable';
+import ChallengeMenu from 'containers/ChallengeMenu/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
 import GlobalStyle from '../../global-styles';
@@ -22,6 +23,7 @@ export default function App() {
       <NavBar />
       <Switch>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/ChallengeMenu" component={ChallengeMenu} />
         <Route component={NotFoundPage} />
       </Switch>
       <GlobalStyle />

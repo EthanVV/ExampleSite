@@ -15,9 +15,16 @@ import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 
 const Title = styled.h1`
-  font-size: 1.5em;
+  font-size: 4rem;
   text-align: center;
   color: black;
+`;
+
+const ChallengeMenu = styled.ChallengeMenu`
+  display: grid;
+  width: 70vw;
+  height: 80vh;
+  background-color: orange;
 `;
 
 /* eslint-disable react/prefer-stateless-function */
@@ -29,9 +36,12 @@ export default class FizzBuzz extends React.Component {
 
   render() {
     return (
-      <Title>
-        <FormattedMessage {...messages.header} />
-      </Title>
+      <div>
+        <Title>
+          <FormattedMessage {...messages.header} />
+        </Title>
+        <ChallengeMenu>test</ChallengeMenu>
+      </div>
     );
   }
 }

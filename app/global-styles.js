@@ -5,6 +5,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   body {
@@ -16,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #app {
-    background-color: #fafafa;
+    background-color: #c0c0c0;
     min-height: 100%;
     min-width: 100%;
   }
