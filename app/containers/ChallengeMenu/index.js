@@ -28,12 +28,12 @@ const ChallengeWrap = styled.div`
   width: 100%;
 `;
 
-const Box = (props) => {
+function Box(props) {
   return (
     <Link style={{ textDecoration: 'none' }} to={`/challenges/${props.name}`}>
       <ChallengeWrap>{props.name}</ChallengeWrap>
     </Link>
-  )
+  );
 }
 
 /* eslint-disable react/prefer-stateless-function */
