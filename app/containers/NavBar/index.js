@@ -49,7 +49,7 @@ export default class NavBar extends React.PureComponent {
         <Link style={buttonWrap} to="/">
           <Button>Home</Button>
         </Link>
-        <Link style={buttonWrap} to="/ChallengeMenu">
+        <Link style={buttonWrap} to="/challenge_menu">
           <Button>Challenges</Button>
         </Link>
         <Link style={buttonWrap} to="/">

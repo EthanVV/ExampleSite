@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
@@ -14,7 +15,7 @@ const Menu = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, 30rem);
   grid-auto-rows: minmax(20rem, auto);
-  justify-content: space-evenly;
+  justify-content: center;
   text-align: center;
   padding: 2rem;
   gap: 2rem;
@@ -23,14 +24,20 @@ const Menu = styled.div`
 const ChallengeWrap = styled.div`
   background-color: #b5eecb;
   text-decoration: none;
+  font-size: 2rem;
   color: black;
   height: 100%;
   width: 100%;
 `;
 
+Box.propTypes = {
+  name: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
+};
+
 function Box(props) {
   return (
-    <Link style={{ textDecoration: 'none' }} to={`/challenges/${props.name}`}>
+    <Link style={{ textDecoration: 'none' }} to={`/challenges/${props.link}`}>
       <ChallengeWrap>{props.name}</ChallengeWrap>
     </Link>
   );
@@ -43,7 +50,7 @@ export default class ChallengeMenu extends React.PureComponent {
       <Wrapper>
         <Title>Challenge Menu</Title>
         <Menu>
-          <Box name="FizzBuzz" />
+          <Box name="Fizz Buzz" link="fizz_buzz" />
           <Box name="2nd" />
           <Box name="3rd" />
           <Box name="4th" />
